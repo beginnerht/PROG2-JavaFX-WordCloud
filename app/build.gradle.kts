@@ -8,7 +8,14 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("org.openjfx.javafxplugin") version "0.1.0"
 }
+
+javafx {
+    version = "21" //Meine Version: 25
+    modules = listOf("javafx.base", "javafx.graphics","javafx.controls", "javafx.fxml")
+}
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -34,7 +41,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "ch.zhaw.it.prog2.wordcloud.App"
+    mainClass.set("ch.zhaw.it.prog2.wordcloud.App")
 }
 
 tasks.named<Test>("test") {
