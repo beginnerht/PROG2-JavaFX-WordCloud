@@ -1,2 +1,2 @@
-# -PROG2-JavaFX-WordCloud
+# PROG2-JavaFX-WordCloud
 This is a repo for a GUI workshop.
